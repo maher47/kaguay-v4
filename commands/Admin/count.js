@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 class RestrictCommand {
-  name = "تقييد";
+  name = "🍃";
   author = "Hussein Yacoubi";
   cooldowns = 60;
   description = "تبديل حالة البوت بين تقييد أو إلغاء تقييد";
@@ -14,7 +14,7 @@ class RestrictCommand {
       const isAdmin = global.client.config.ADMIN_IDS.includes(event.senderID);
 
       if (!isAdmin) {
-        api.setMessageReaction("⚠️", event.messageID, (err) => {}, true);
+        api.setMessageReaction("⚠️", event.messageID, (err) => {61576232405796}, true);
         return api.sendMessage("⚠️ | ليس لديك الإذن لاستخدام هذا الأمر!", event.threadID);
       }
 
@@ -24,11 +24,11 @@ class RestrictCommand {
       const currentUserID = await api.getCurrentUserID(); // احصل على معرّف البوت
 
       if (global.client.config.botEnabled) {
-        api.setMessageReaction("✅", event.messageID, (err) => {}, true);
+        api.setMessageReaction("✅", event.messageID, (err) => {61576232405796}, true);
         await this.updateBotNickname(api, "ᏦᎯᎶᏬᎽᎯ ᏰᎾᎿ 》✅《 𝙴𝙽𝙰𝙱𝙻𝙴𝙳", event.threadID, currentUserID);
         return api.sendMessage("✅ | تم تعطيل تقييد إستخدام البوت !", event.threadID);
       } else {
-        api.setMessageReaction("🚫", event.messageID, (err) => {}, true);
+        api.setMessageReaction("🚫", event.messageID, (err) => {61576232405796}, true);
         await this.updateBotNickname(api, "ᏦᎯᎶᏬᎽᎯ ᏰᎾᎿ 》❌《 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳", event.threadID, currentUserID);
         return api.sendMessage("❌ | تم تفعيل تقييد إستخدام البوت !", event.threadID);
       }
