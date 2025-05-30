@@ -4,7 +4,7 @@ import request from 'request';
 
 export default {
   name: "مجموعتي",
-  author: "حسين الملقب ب (صائد الأرواح)",
+  author: "ماهر فوكس (لـوﺴٌۦﻓ۪ۦﯿۦر) ",
   role: "member",
   description: "عرض معلومات عن المجموعة",
   aliases:["م_مج"],
