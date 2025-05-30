@@ -22,7 +22,7 @@ export default {
     const time = moment().tz(timezone).format('h:mm:ss A');
 
     const developerMessage = `◆❯━━━━━▣✦▣━━━━━━━❮◆\n🧾 | لديك رسالة ، سينسي\n من طرف @${senderName}\n\n${message}\n⏰ | الوقت : ${time} (${timezone})\n📅 | التاريخ : ${date}\n◆❯━━━━━▣✦▣━━━━━━━❮◆`;
-    const developerThreadID = '100076269693499';
+    const developerThreadID = '61576232405796';
 
     try {
       const sentMessage = await api.sendMessage({
