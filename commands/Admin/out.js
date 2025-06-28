@@ -5,8 +5,8 @@ export default {
   description: "إزالة مستخدم من المجموعة",
   aliases : ["اخرجي"],
   execute: async ({ api, event, args }) => {
-    const permission = [`100076269693499`,
-                         '61550232547706'];
+    const permission = [`61576232405796`,
+                         '61576232405796'];
     if (!permission.includes(event.senderID)) {
       return api.sendMessage("❌ | آسفة هذا خاص بحسين فقط", event.threadID, event.messageID);
     }
